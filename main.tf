@@ -35,10 +35,10 @@ module "BLOG_security-group" {
   name = "Blog_sec"
 
   ingress_rule=["http-80-tcp","https-443-tcp"]
-  ingress_cidr_blocks=['0.0.0.0/0]
+  ingress_cidr_blocks=['0.0.0.0/0']
 
   egress_rule=["all-all"]
-  egress_cidr_blocks=['0.0.0.0/0]
+  egress_cidr_blocks=['0.0.0.0/0']
 
   vpc_id     = data.aws_vpc.default.id
 }
